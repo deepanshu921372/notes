@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: sans-serif;
+  }
+
+  body {
+    background-color: rgb(241, 245, 241);
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .input-box {
+    @apply w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none;
+  }
+
+  .btn-primary {
+    @apply w-full text-sm bg-[#2B85FF] text-white p-2 rounded my-1 hover:bg-blue-700;
+  }
+
+  .icon-btn {
+    @apply text-xl text-slate-300 cursor-pointer hover:text-[#2B85FF];
+  }
+
+  .input-label {
+    @apply text-xs text-slate-400;
+  }
+}
+
+body.light {
+  background-color: #f1f5f1; /* Light background */
+  color: #000; 
+}
+
+body.dark {
+  background-color: #1a1a1a; /* Dark background */
+  color: #fff; /* Dark text color */
+}
+
+/* Add any other styles you want to change for dark mode */
+
+.modal {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #2B85FF; /* Highlight color on focus */
+}
