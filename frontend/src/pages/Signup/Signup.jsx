@@ -38,7 +38,7 @@ const Signup = () => {
     // sign up api
     try {
       const res = await axios.post(
-        "https://notes-backend-hn37.onrender.com/api/auth/signup",
+        "http://localhost:3000/api/auth/signup",
         { username: name, email, password },
         { withCredentials: true }
       )
