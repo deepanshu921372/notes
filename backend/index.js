@@ -21,10 +21,14 @@ const app = express()
 // to make input as json
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({ origin: ["http://localhost:5173"], credentials: true }))
+app.use(cors({ origin: ["http://localhost:5173"], methods: ["GET", "POST", "PUT", "DELETE"], credentials: true }))
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`)
+})
+
+app.get("/", (req, res) => {
+  res.send("Hello World")
 })
 
 // import routes
