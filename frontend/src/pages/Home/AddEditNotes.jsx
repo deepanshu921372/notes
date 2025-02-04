@@ -103,7 +103,7 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
       <div className="flex flex-col gap-2 mt-4">
         <label className="input-label text-red-400 uppercase">Content</label>
         <textarea
-          className={`text-sm text-slate-950 outline-none bg-slate-50 p-2 rounded border-2 border-gray-300 focus:border-blue-500 ${theme === 'dark' ? 'bg-[#1f2937] text-white' : 'bg-white text-black'} ${theme === 'dark' ? 'focus:border-gray-700' : 'focus:border-blue-500'}`}
+          className={`text-sm text-slate-950 outline-none bg-gray-800 p-2 rounded border-2 border-gray-300 focus:border-blue-500 ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-black'} ${theme === 'dark' ? 'focus:border-gray-700' : 'focus:border-blue-500'}`}
           placeholder="Content..."
           rows={10}
           value={content}

@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
-      <ToastContainer position="top-center" />
+      <ToastContainer position="top-right" style={{ marginTop: '50px' }} />
     </BrowserRouter>
   )
 }
